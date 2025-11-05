@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="qr-code-to-website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +16,62 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+
+    /* custom colors here */
+    :root {
+      --bg-color: hsl(212, 45%, 89%);
+      --card-color: hsl(0, 0%, 100%);
+      --title-color: hsl(218, 44%, 22%);
+      --content-color: hsl(216, 15%, 48%);
+    }
+
+
+    .attribution { font-size: 11px; text-align: center; padding: 10px;}
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    html {
+      background-color: var(--bg-color);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      height: 380px;
+      width: 230px;
+      background-color: var(--card-color);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    img {
+      /* image will scale down when it has to but doesn't scale up */
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
     .outfit-title {
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
+      color: var(--title-color);
     }
 
     .outfit-content {
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 400;
+      font-weight: 200;
       font-style: normal;
+      font-size: 15px;
+      color: var(--content-color);
+      text-align: center;
     }
+
 
   </style>
 </head>
