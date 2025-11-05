@@ -14,89 +14,24 @@
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-    /* custom colors here */
-    :root {
-      --bg-color: hsl(212, 45%, 89%);
-      --card-color: hsl(0, 0%, 100%);
-      --title-color: hsl(218, 44%, 22%);
-      --content-color: hsl(216, 15%, 48%);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    .attribution { font-size: 11px; text-align: center; padding: 10px;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    html {
-      background-color: var(--bg-color);
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .card {
-      height: 380px;
-      width: 230px;
-      background-color: var(--card-color);
-      border-radius: 10px;
-      padding: 10px;
-      margin: 50px;
-    }
-
-    img {
-      /* image will scale down when it has to but doesn't scale up */
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .outfit-title {
-      font-family: "Outfit", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
-      color: var(--title-color);
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-align: center;
-    }
-
-    .outfit-content {
-      font-family: "Outfit", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-      font-size: 15px;
-      color: var(--content-color);
-      text-align: center;
-    }
-
-
-  </style>
 </head>
 <body>
-  <!-- create div container and card-->
-  <div class="container">
-    <div class="card">
-      <img src="images/image-qr-code.png" alt="QR code">
-      <p class="outfit-title">Improve your front-end skills by building projects</p>
-      <p class="outfit-content">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <main>
+    <!-- create div container and card-->
+    <div class="container">
+      <div class="card">
+        <img src="images/image-qr-code.png" alt="QR code">
+        <p class="outfit-title">Improve your front-end skills by building projects</p>
+        <p class="outfit-content">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
     </div>
-  </div>
-  <!-- border radius and slight card shadow -->
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Aathiqa Nassim</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aathiqa Nassim</a>.
+    </div>
+  </footer>
 </body>
 </html>
