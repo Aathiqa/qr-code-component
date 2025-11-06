@@ -33,15 +33,18 @@ body {
     width: 230px;
     background-color: var(--card-color);
     border-radius: 10px;
-    padding: 10px;
     margin: 50px;
+    padding: 10px;;
 }
 
 img {
-    /* image will scale down when it has to but doesn't scale up */
+    /* 'img' is inline by default */
+    /* (even if we are applying block when there is one image)image will scale down when it has to but doesn't scale up */
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    /* takes up full available width of container */
+    display: block;
 }
 
 .outfit-title {
@@ -61,4 +64,14 @@ img {
     /* 'font-size' is for desgin style (e.g. italic) */
     color: var(--content-color);
     text-align: center;
+}
+
+.attribution {
+    background-color: var(--card-color);
+    color: var(--content-color);
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
 }
