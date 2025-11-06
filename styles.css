@@ -18,6 +18,10 @@ html {
     background-color: var(--bg-color);
 }
 
+body {
+    font-family: "Outfit", sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -41,10 +45,9 @@ img {
 }
 
 .outfit-title {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
+    font-optical-sizing: auto;  /* ????? */
     font-weight: 700;
-    font-style: normal;
+    font-style: normal; /* ????? */
     color: var(--title-color);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -52,11 +55,10 @@ img {
 }
 
 .outfit-content {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
+    /* 'font-optical-sizing'  adjusts letterform based on font size and resolution */
+    font-weight: 200; /* is thiss important here */
     font-style: normal;
-    font-size: 15px;
+    /* 'font-size' is for desgin style (e.g. italic) */
     color: var(--content-color);
     text-align: center;
 }
